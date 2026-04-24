@@ -1,11 +1,11 @@
-import type { RootState } from '@/store/types'
 import { useDispatch, useSelector } from 'react-redux'
 import { deleteService, startEditing } from '@/store/actions'
+import { selectFilteredServices } from '@/store/selectors'
 
 export const ServiceList = () => {
   const dispatch = useDispatch()
 
-  const services = useSelector((state: RootState) => state.services.items)
+  const services = useSelector(selectFilteredServices)
 
   return (
     <div className="service-list">
@@ -21,7 +21,7 @@ export const ServiceList = () => {
       {services.length === 0
         ? (
             <p>
-              Услуг пока нет
+              Услуги не найдены
             </p>
           )
         : (

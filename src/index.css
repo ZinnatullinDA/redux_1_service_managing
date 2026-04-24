@@ -9,21 +9,25 @@ body {
 }
 
 .app {
-  width: 700px;
+  width: 720px;
   margin: 40px auto;
   padding: 24px;
   background: white;
   border-radius: 12px;
 }
 
+/* БЛОКИ */
 .service-form,
-.service-list {
-  margin-top: 24px;
+.service-list,
+.search,
+.stats {
+  margin-top: 20px;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 10px;
 }
 
+/* ФОРМА */
 .service-form {
   background: #fafafa;
 }
@@ -38,12 +42,7 @@ input {
   font-size: 16px;
 }
 
-.buttons,
-.item-buttons {
-  display: flex;
-  gap: 8px;
-}
-
+/* КНОПКИ */
 button {
   padding: 8px 12px;
   cursor: pointer;
@@ -56,6 +55,13 @@ button:hover {
   background: #eee;
 }
 
+.buttons,
+.item-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+/* СПИСОК */
 ul {
   padding: 0;
   list-style: none;
@@ -70,18 +76,36 @@ li {
   border-bottom: 1px solid #ddd;
 }
 
+/* ОШИБКИ */
 .error {
   margin-top: 4px;
   color: crimson;
   font-size: 14px;
 }
 
+/* РЕДАКТИРОВАНИЕ */
 .edit-info {
   padding: 10px;
   background: #fff3cd;
   border-radius: 6px;
 }
 
-.count {
+/* СТАТИСТИКА */
+.stats {
   font-weight: bold;
+}
+
+/* ПОИСК */
+.search {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.search input {
+  flex: 1;
+}
+
+.search button {
+  width: 40px;
 }

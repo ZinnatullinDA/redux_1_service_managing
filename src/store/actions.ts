@@ -10,6 +10,9 @@ export const CANCEL_EDITING = 'CANCEL_EDITING'
 export const CLEAR_FORM = 'CLEAR_FORM'
 export const SET_VALIDATION_ERRORS = 'SET_VALIDATION_ERRORS'
 
+export const SET_SEARCH_TERM = 'SET_SEARCH_TERM'
+export const CLEAR_SEARCH = 'CLEAR_SEARCH'
+
 export const addService = (name: string, price: number) => ({
   type: ADD_SERVICE,
   payload: { name, price },
@@ -46,4 +49,13 @@ export const clearForm = () => ({
 export const setValidationErrors = (errors: FormErrors) => ({
   type: SET_VALIDATION_ERRORS,
   payload: errors,
+})
+
+export const setSearchTerm = (searchTerm: string) => ({
+  type: SET_SEARCH_TERM,
+  payload: { searchTerm },
+})
+
+export const clearSearch = () => ({
+  type: CLEAR_SEARCH,
 })

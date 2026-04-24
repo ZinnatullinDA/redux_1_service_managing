@@ -19,4 +19,7 @@ export interface RootState {
     editingId: string | null
     errors: FormErrors
   }
+  filter: {
+    searchTerm: ''
+  }
 }
