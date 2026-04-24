@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+.app {
+  width: 700px;
+  margin: 40px auto;
+  padding: 24px;
+  background: white;
+  border-radius: 12px;
+}
+
+.service-form,
+.service-list {
+  margin-top: 24px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.service-form {
+  background: #fafafa;
+}
+
+.form-row {
+  margin-bottom: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.buttons,
+.item-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  background: white;
+}
+
+button:hover {
+  background: #eee;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.error {
+  margin-top: 4px;
+  color: crimson;
+  font-size: 14px;
+}
+
+.edit-info {
+  padding: 10px;
+  background: #fff3cd;
+  border-radius: 6px;
+}
+
+.count {
+  font-weight: bold;
+}
